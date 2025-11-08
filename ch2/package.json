@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "mongodb": "^7.0.0",
+    "name": "ch2",
+    "version": "1.0.0",
+    "type": "module",
+    "main": "backend/mongodbWeb.js"
+  }
+}
