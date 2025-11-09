@@ -11,3 +11,8 @@ const post = new Post({
 await post.save()
 const posts = await Post.find()
 console.log(posts)
+
+const createdPost = await post.save()
+await Post.findByIdAndUpdate(createdPost._id, {
+  $set: { title: "Hello again, Mongoose!!!!!", author: "Jon Doe" },
+})
