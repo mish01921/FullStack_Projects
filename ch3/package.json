@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "lint": "eslint src",
-    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest"
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest",
+    "start": "node src/index.js"
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",
@@ -22,6 +23,7 @@
   },
   "dependencies": {
     "dotenv": "^17.2.3",
+    "express": "^5.1.0",
     "mongodb-memory-server": "^10.3.0",
     "mongoose": "^8.19.3"
   }
